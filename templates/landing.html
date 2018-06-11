@@ -1,0 +1,223 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Landing</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Ubuntu:500" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/one-page-scroll.css' %}">
+    <!-- slider style -->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+
+    <link rel="stylesheet" href="{% static 'pages_style/landing.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/media/landing.css' %}">
+{% endblock %}
+
+
+{% block main %}
+    <section class="row align-items-start">
+        {% include 'base/header.html' %}
+
+        <div class="slider-container w-100">
+            <div id="carousel-controls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-controls" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-controls" data-slide-to="1"></li>
+                    <li data-target="#carousel-controls" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'media/slider-content/img_1.jpeg' %}" class="d-block w-100" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Topic 1</h5>
+                            <p>Hello world!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'media/slider-content/img_1.jpeg' %}" class="d-block w-100" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'media/slider-content/img_1.jpeg' %}" class="d-block w-100" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row col-12 justify-content-center align-items-end">
+            <div class="arrow-container">
+                <i class="arrow">
+                    <span></span>
+                </i>
+            </div>
+        </div>
+    </section>
+    <section id="about-us" class="row justify-content-center align-items-center">
+        <h1>Об авторе</h1>
+        <div class="row col-10">
+            <div class="row col-5 col-md-4 align-items-center">
+                <img src="{% static 'media/author/author.png' %}" class="img-fluid author-img" alt="Author image">
+            </div>
+            <div class="col-6 mx-auto">
+                <div class="contact">
+                    <h2>Виктория Ратеева</h2>
+                    <h3>Психолог</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Adipisci beatae, debitis
+                    dignissimos distinctio dolore.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto doloremque in perspiciatis quibusdam vel? Adipisci aliquid earum est quibusdam repellendus!
+                    Aliquid animi cum deleniti molestias.
+                </p>
+                <h3 class="phone">
+                    <i class="fas fa-mobile-alt"></i>Контактные данные:
+                    <sup class="show-phone">
+                        <span class="badge badge-warning">Показать</span>
+                    </sup>
+                </h3>
+                <p class="phone-nmb">+380 (50) XXX-XX-XX</p>
+                <h3><i class="fas fa-broadcast-tower"></i> Социальные сети:</h3>
+                <div class="row col-12 col-sm-8 social">
+                    <a href="https://www.facebook.com/viktoria.rateeva" class="fb">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/viktoriarateeva/" class="inst">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                    <a href="mailto:ratviktoriya@gmail.com" class="gmail">
+                        <i class="fab fa-google fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row col-12 justify-content-center align-items-end">
+            <div class="arrow-container">
+                <i class="arrow">
+                    <span></span>
+                </i>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-arrivals" class="row">
+        <h1>Новые поступления</h1>
+
+        <div class="row col-12 justify-content-around new-item-container">
+
+            <a class="row col-12 col-sm-6 col-md-3 new-item" href="{% url 'item' %}">
+                <div class="row">
+                    <img src="{% static 'media/new_arrivals/img_1.webp' %}" alt="New card" class="img-fluid">
+                    <div class="row description">
+                        <p class="col-12 new-arrivals-name">PUZZLE-maxi</p>
+                        <p class="col-12 price">150</p>
+                    </div>
+                </div>      
+            </a>
+            <a class="row col-12 col-sm-6 col-md-3 new-item" href="{% url 'item' %}">
+                <div class="row">
+                    <img src="{% static 'media/new_arrivals/img_1.webp' %}" alt="New card" class="img-fluid">
+                    <div class="row description">
+                        <p class="col-12 new-arrivals-name">PUZZLE-maxi</p>
+                        <p class="col-12 price">150</p>
+                    </div>
+                </div>      
+            </a>
+            <a class="row col-6 col-sm-6 col-md-3 new-item last-item" href="{% url 'item' %}">
+                <div class="row">
+                    <img src="{% static 'media/new_arrivals/img_1.webp' %}" alt="New card" class="img-fluid">
+                    <div class="row description">
+                        <p class="col-12 new-arrivals-name">PUZZLE-maxi</p>
+                        <p class="col-12 price">150</p>
+                    </div>
+                </div>      
+            </a>
+        </div>
+        <div class="row col-12 justify-content-center align-items-end">
+            <div class="arrow-container">
+                <i class="arrow">
+                    <span></span>
+                </i>
+            </div>
+        </div>
+    </section>
+
+    <section class="row justify-content-center align-items-center">
+        <h1>Товары</h1>
+        <div class="row col-10 items">
+            <a class="item" href="{% url 'item' %}">
+                <div class="image-container">
+                    <img src="{% static 'media/items/image_1.jpg' %}" alt="Item 1">
+                </div>
+                <p class="item-name">Психологические карточки</p>
+                <p class="price">1350</p>
+            </a>
+            <a class="item" href="{% url 'item' %}">
+                <div class="image-container">
+                    <img src="{% static 'media/items/image_2.jpg' %}" alt="Item 1">
+                </div>
+                <p class="item-name">Психологические карточки</p>
+                <p class="price">1350</p>
+            </a>
+            <a class="item" href="{% url 'item' %}">
+                <div class="image-container">
+                    <img src="{% static 'media/items/image_3.jpg' %}" alt="Item 1">
+                </div>
+                <p class="item-name">Психологические карточки</p>
+                <p class="price">1350</p>
+            </a>
+            <a class="item" href="{% url 'item' %}">
+                <div class="image-container">
+                    <img src="{% static 'media/items/image_4.jpg' %}" alt="Item 1">
+                </div>
+                <p class="item-name">Психологические карточки</p>
+                <p class="price">1350</p>
+            </a>
+            <a class="item" href="{% url 'item' %}">
+                <div class="image-container">
+                    <img src="{% static 'media/items/image_5.jpg' %}" alt="Item 1">
+                </div>
+                <p class="item-name">Психологические карточки</p>
+                <p class="price">1350</p>
+            </a>
+            <a class="item" href="{% url 'item' %}">
+                <div class="image-container">
+                    <img src="{% static 'media/items/image_6.jpg' %}" alt="Item 1">
+                </div>
+                <p class="item-name">Психологические карточки</p>
+                <p class="price">1350</p>
+            </a>
+            <a class="item" href="{% url 'item' %}">
+                <div class="image-container">
+                    <img src="{% static 'media/items/image_7.jpg' %}" alt="Item 1">
+                </div>
+                <p class="item-name">Психологические карточки</p>
+                <p class="price">1350</p>
+            </a>
+
+        </div>
+
+    </section>
+
+{% endblock %}
+
+{% block scripts %}
+<!--    slider dependencies  -->
+<script src="{% static 'lib/jquery-migrate.min.js' %}"></script>
+<script src="{% static 'lib/slick.min.js' %}"></script>
+
+
+
+<script src="{% static 'lib/one-page-scroll.min.js' %}"></script>
+
+
+<script defer src="{% static 'pages_script/landing.js' %}"></script>
+
+{% endblock %}

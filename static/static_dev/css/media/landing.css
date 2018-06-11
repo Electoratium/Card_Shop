@@ -1,0 +1,294 @@
+@media only screen and (max-width: 1440px) and (orientation: landscape) {
+    html {
+        font-size: 100%;
+    }
+    .nav-link {
+        font-size: 1.25rem;
+    }
+    .slider-container .carousel,
+    .slider-container .carousel-inner,
+    .slider-container .carousel-inner .carousel-item,
+    .slider-container .carousel-inner img {
+      height: 72.5vh;
+    }
+    section h1 {
+        font-size: 3rem;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    #about-us h3 {
+        font-size: 1.25rem;
+    }
+    #about-us p {
+        font-size: 1rem;
+    }
+    .social a{
+        width: 50px;
+        height: 50px;
+    }
+    .description .new-arrivals-name {
+        font-size: 1rem;
+    }
+    .new-item img {
+        height: 35vh;
+    }
+    .price {
+        font-size: 1rem;
+    }
+    .item-name {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape){
+    html {
+        font-size: 90%;
+    }
+    .slick-prev, .slick-next {
+        top: 65%;
+    }
+}
+@media only screen and (max-width: 823px) and (orientation: landscape){
+    html {
+        font-size: 75%;
+    }
+    section h1 {
+        font-size: 1.5rem;
+    }
+    .contact h2 {
+        font-size: 1.25rem;
+    }
+    #about-us h3 {
+        font-size: 1rem;
+    }
+    #about-us p {
+        font-size: 0.75rem;
+    }
+    .social a {
+        width: 40px;
+        height: 40px;
+    }
+    #new-arrivals .new-item-container {
+        height: 70vh;
+    }
+    .description .new-arrivals-name {
+        font-size: 1.25rem;
+    }
+    .price {
+        font-size: 1.1rem;
+    }
+    .items {
+        height: auto;
+    }
+    .item-name {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+    html {
+        font-size: 65%;
+    }
+    .last-item {
+        display: none;
+    }
+    .social a {
+        width: 35px;
+        height: 35px;
+    }
+    .slick-prev, .slick-next {
+        top: 85%;
+    }
+}
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+    html {
+        font-size: 60%;
+    }
+    .social a {
+        width: 30px;
+        height: 30px;
+    }
+    .new-item-container a.col-12{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .image-container {
+        height: 60vh;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 60%;
+    }
+    .slider-container .carousel,
+    .slider-container .carousel-inner,
+    .slider-container .carousel-inner .carousel-item,
+    .slider-container .carousel-inner img {
+      height: 80vh;
+    }
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    #about-us h3 {
+        font-size: 2rem;
+    }
+    #about-us p{
+        font-size: 1.25rem;
+    }
+    .social a {
+        width: 30px;
+        height: 30px;
+    }
+    .item-name {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    html {
+        font-size: 60%;
+    }
+    section h1 {
+        font-size: 3.5rem;
+    }
+    .contact h2 {
+        font-size: 1.75rem;
+    }
+    #about-us h3 {
+        font-size: 1.4rem;
+    }
+    #about-us p{
+        font-size: 1.1rem;
+    }
+    .social a {
+        width: 30px;
+        height: 30px;
+    }
+    .item-name {
+        font-size: 1.3rem;
+    }
+    .slick-prev, .slick-next {
+        top: 65%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 574px) {
+    html {
+        font-size: 55%;
+    }
+    .social a {
+        width: 30px;
+        height: 30px;
+    }
+    .last-item {
+        display: none;
+    }
+    .slick-prev, .slick-next {
+        top: 65%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+    .social a {
+        width: 30px;
+        height: 30px;
+    }
+    .last-item {
+        display: none;
+    }
+    .slick-prev, .slick-next {
+        top: 65%;
+    }
+}
+@media only screen and (max-width: 380px) {
+    html {
+        font-size: 55%;
+    }
+    .nav-link {
+        font-size: 1.25rem;
+    }
+    .slider-container .carousel,
+    .slider-container .carousel-inner,
+    .slider-container .carousel-inner .carousel-item,
+    .slider-container .carousel-inner img {
+      height: 70vh;
+    }
+    .slick-prev, .slick-next {
+        top: 60%;
+    }
+    section h1 {
+        font-size: 3rem;
+    }
+    #about-us h3 {
+        font-size: 1.5rem;
+    }
+    #about-us p {
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 50%;
+    }
+    .slick-prev, .slick-next {
+        top: 70%;
+    }
+    .new-item-container img {
+        height: 37vh;
+    }
+
+}
+
+
+ /*portrait orientation */
+@media only screen and (min-width: 640px) and (max-width: 1024px) and (orientation: portrait) {
+    html {
+        font-size: 100%;
+    }
+    .nav-link {
+        font-size: 1.25rem;
+    }
+    .slider-container .carousel,
+    .slider-container .carousel-inner,
+    .slider-container .carousel-inner .carousel-item,
+    .slider-container .carousel-inner img {
+      height: 70vh;
+    }
+    section h1 {
+        font-size: 3rem;
+    }
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    #about-us h3{
+        font-size: 1.5rem;
+    }
+    #about-us p {
+        font-size: 1.25rem;
+    }
+    .social a{
+        width: 50px;
+        height: 50px;
+    }
+    .description .new-arrivals-name {
+        font-size: 1.3rem;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
+    .new-item img{
+        height: 30vh;
+    }
+
+}
+@media only screen and (min-width: 640px) and (max-width: 768px) and (orientation: portrait) {
+    html {
+        font-size: 90%;
+    }
+    #about-us p {
+        font-size: 1rem;
+    }
+    .item-name {
+        font-size: 1rem;
+    }
+}

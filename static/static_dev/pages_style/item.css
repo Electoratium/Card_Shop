@@ -1,0 +1,63 @@
+.nav-link {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#slider {
+    margin-top: 5vh;
+}
+.item-image {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+#slider-nav {
+    position: relative;
+    margin-top: 5%;
+}
+
+.slick-arrow::before {
+    color: #a9abaa;
+    font-size: 1.5rem;
+}
+.item-info {
+    border-top: 1px solid darkgray;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.item-info h1 {
+    color: #7f7f7f;
+    font-size: 1.5rem;
+}
+.price {
+    font-size: 1.6rem;
+}
+.price::after {
+    content: ' ₴';
+}
+
+.card{
+    border-left: none;
+    border-right: none;
+}
+.card-header {
+    background: white;
+}
+.card-body {
+    font-size: 1rem;
+}
+.btn {
+    color: black;
+    background: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.btn i {
+    margin-right: 5%;
+}
+.hidden {
+    display: none;
+}
+
+

@@ -21,7 +21,7 @@ $(".nav-link").click( (e) => {
  return false;
 } );
 
-$('.items').slick({
+$('.items-slider').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 4,

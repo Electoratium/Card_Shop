@@ -1,4 +1,4 @@
-{% extends 'base/base.html' %}
+{% extends 'old-html/base/base.html' %}
 {% load static %}
 
 {% block head %}
@@ -18,7 +18,7 @@
 
 {% block main %}
     <section class="row align-items-start">
-        {% include 'base/header.html' %}
+        {% include 'old-html/base/header.html' %}
 
         <div class="slider-container w-100">
             <div id="carousel-controls" class="carousel slide" data-ride="carousel">
@@ -29,17 +29,17 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{% static 'media/slider-content/img_1.jpeg' %}" class="d-block w-100" alt="First slide">
+                        <img src="{% static 'media/slider-content/large/img_1.jpeg' %}" class="d-block w-100" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Topic 1</h5>
                             <p>Hello world!</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{% static 'media/slider-content/img_1.jpeg' %}" class="d-block w-100" alt="Second slide">
+                        <img src="{% static 'media/slider-content/large/img_1.jpeg' %}" class="d-block w-100" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img src="{% static 'media/slider-content/img_1.jpeg' %}" class="d-block w-100" alt="Third slide">
+                        <img src="{% static 'media/slider-content/large/img_1.jpeg' %}" class="d-block w-100" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
@@ -114,7 +114,7 @@
 
             <a class="row col-12 col-sm-6 col-md-3 new-item" href="{% url 'item' %}">
                 <div class="row">
-                    <img src="{% static 'media/new_arrivals/img_1.webp' %}" alt="New card" class="img-fluid">
+                    <img src="{% static 'media/new_arrivals/large/img_1.webp' %}" alt="New card" class="img-fluid">
                     <div class="row description">
                         <p class="col-12 new-arrivals-name">PUZZLE-maxi</p>
                         <p class="col-12 price">150</p>
@@ -123,7 +123,7 @@
             </a>
             <a class="row col-12 col-sm-6 col-md-3 new-item" href="{% url 'item' %}">
                 <div class="row">
-                    <img src="{% static 'media/new_arrivals/img_1.webp' %}" alt="New card" class="img-fluid">
+                    <img src="{% static 'media/new_arrivals/large/img_1.webp' %}" alt="New card" class="img-fluid">
                     <div class="row description">
                         <p class="col-12 new-arrivals-name">PUZZLE-maxi</p>
                         <p class="col-12 price">150</p>
@@ -132,7 +132,7 @@
             </a>
             <a class="row col-6 col-sm-6 col-md-3 new-item last-item" href="{% url 'item' %}">
                 <div class="row">
-                    <img src="{% static 'media/new_arrivals/img_1.webp' %}" alt="New card" class="img-fluid">
+                    <img src="{% static 'media/new_arrivals/large/img_1.webp' %}" alt="New card" class="img-fluid">
                     <div class="row description">
                         <p class="col-12 new-arrivals-name">PUZZLE-maxi</p>
                         <p class="col-12 price">150</p>

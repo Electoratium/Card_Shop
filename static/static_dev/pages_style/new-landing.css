@@ -49,12 +49,13 @@ span {
 
 #home {
     display: grid;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: auto 6fr 1fr;
 }
 header {
     display: grid;
     align-items: center;
     background: #dbdbdb;
+    padding: 1.1vh 0;
 }
 .grid-nav {
     margin: 0;
@@ -108,6 +109,12 @@ section h1 {
 
 .author-img, .contact-data {
     align-self: center;
+}
+.contact-data {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+
 }
 .contact{
     border-bottom: 1px solid #676969;
@@ -195,7 +202,6 @@ section h1 {
     background: #3e7695;
     opacity: 0.75;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 600;
     text-align: center;
     color: white;
 }
@@ -212,6 +218,7 @@ section h1 {
     display: grid;
     width: 85vw;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 .item {
@@ -221,6 +228,13 @@ section h1 {
 .image-container {
     display: grid;
     justify-content: center;
+}
+
+.slick-prev {
+    left: -5%;
+}
+.slick-next {
+    right: -5%;
 }
 .slick-prev, .slick-next {
     top: 65%;

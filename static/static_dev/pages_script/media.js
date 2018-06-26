@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", getAdaptive);
+window.addEventListener('resize', getAdaptive);
 
 function  getAdaptive() {
-    const deviceWidth = document.documentElement.clientWidth;
+    const deviceWidth = document.documentElement.clientWidth,
+        minWidth = 1024;
     let carouselSlides = document.getElementsByClassName('carousel-inner')[0].children,
         authorImg = document.getElementsByClassName('author-img')[0].firstElementChild,
         newArrivalsItems = document.getElementsByClassName('new-item');
@@ -17,7 +19,7 @@ function  getAdaptive() {
 
         elem.setAttribute('src', newpath);
     }
-    if( deviceWidth >= 1440) {
+    if( deviceWidth >= minWidth) {
         for(let slide of carouselSlides) {
             changeImagePath(slide.children[0])
         }

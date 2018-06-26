@@ -196,6 +196,8 @@ address {
     grid-row-gap: 5vh;
 }
 .new-item {
+    display: grid;
+    align-items: center;
     position: relative;
 }
 .item-descr {

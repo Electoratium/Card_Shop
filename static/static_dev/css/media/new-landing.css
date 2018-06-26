@@ -4,12 +4,12 @@
     html {
         font-size: 200%;
     }
-    .carousel-item img{
-        height: 85vh;
-    }
-    .author-data {
-        grid-template-columns: 2fr 3fr;
-    }
+    /*.carousel-item img{*/
+        /*height: 85vh;*/
+    /*}*/
+    /*.author-data {*/
+        /*grid-template-columns: 2fr 3fr;*/
+    /*}*/
     .contact-data {
         font-size: 0.8rem;
     }
@@ -24,11 +24,11 @@
     #new-arrivals {
         grid-row-gap: 7vh;
     }
-    .arrivals {
-        grid-template-rows: none;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 2vw;
-    }
+    /*.arrivals {*/
+        /*grid-template-rows: none;*/
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+        /*grid-column-gap: 2vw;*/
+    /*}*/
     .item-descr {
         font-size: 0.8rem;
     }
@@ -56,11 +56,6 @@
     }
     #new-arrivals {
         grid-row-gap: 7vh;
-    }
-    .arrivals {
-        grid-template-rows: none;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 2vw;
     }
     .item-descr {
         font-size: 0.8rem;
@@ -109,7 +104,7 @@
 /* smartphone */
 @media all and (min-height: 731px) and (max-height: 823px) and (orientation: portrait) {
    .item-descr {
-       bottom: 15%;
+       bottom: -5%;
    }
 }
 
@@ -121,16 +116,25 @@
 
 
 /* orientation landcape */
-@media all and (min-width: 1024px) and (max-width: 1420px) and (orientation: landscape) {
-    html {
-        font-size: 140%;
-    }
-    .carousel-item img {
+@media all and (orientation: landscape) {
+     .carousel-item img {
         height: 85vh;
     }
     .author-data {
         grid-template-columns: 2fr 3fr;
     }
+    .arrivals {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2vw;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1420px) and (orientation: landscape) {
+    html {
+        font-size: 140%;
+    }
+
     .contact-data {
         font-size: 1.1rem;
     }
@@ -142,14 +146,41 @@
         width: 60px;
         height: 60px;
     }
-    .arrivals {
-        grid-template-rows: none;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 2vw;
-    }
-
 }
 
+
+@media all and (max-width: 823px) and (orientation: landscape){
+    .carousel-item img {
+        height: 75vh;
+    }
+    #about-us {
+        grid-row-gap: 0;
+    }
+    .author-data {
+        grid-template-columns: 2fr 4fr;
+    }
+    .contact-data {
+        grid-template-rows: none;
+        grid-row-gap: 1vh;
+    }
+    .social {
+        grid-template-columns: 40px 40px 40px;
+        justify-content: space-around;
+    }
+    .social a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media all and (max-width: 568px) and (orientation: landscape){
+    html {
+        font-size: 90%;
+    }
+    .item img {
+        height: 70vh;
+    }
+}
 
 
 

@@ -66,7 +66,7 @@
         <h1>Об авторе</h1>
         <div class="author-data">
             <div class="author-img">
-                <img src="{% static 'media/author/author_1.jpg' %}" class="img-full-width" alt="Author image">
+                <img src="{% static 'media/author/small/author.png' %}" class="img-full-width" alt="Author image">
             </div>
             <div class="contact-data">
                 <div class="contact">
@@ -115,21 +115,21 @@
         <h1>Новые поступления</h1>
         <div class="arrivals">
             <a href="{% url 'item' %}" class="new-item">
-                    <img src="{% static 'media/new_arrivals/small/img_1.jpeg' %}" class="img-full-width" alt="New card">
+                    <img src="{% static 'media/new_arrivals/small/img_1.jpg' %}" class="img-full-width" alt="New card">
                     <div class="item-descr">
                         <p>PUZZLE-maxi</p>
                         <p class="price">150</p>
                     </div>
             </a>
             <a href="{% url 'item' %}" class="new-item">
-                    <img src="{% static 'media/new_arrivals/small/img_1.jpeg' %}" class="img-full-width" alt="New card">
+                    <img src="{% static 'media/new_arrivals/small/img_1.jpg' %}" class="img-full-width" alt="New card">
                     <div class="item-descr">
                         <p>PUZZLE-maxi</p>
                         <p class="price">150</p>
                     </div>
             </a>
             <a href="{% url 'item' %}" class="new-item">
-                    <img src="{% static 'media/new_arrivals/small/img_1.jpeg' %}" class="img-full-width" alt="New card">
+                    <img src="{% static 'media/new_arrivals/small/img_1.jpg' %}" class="img-full-width" alt="New card">
                     <div class="item-descr">
                         <p>PUZZLE-maxi</p>
                         <p class="price">150</p>
@@ -211,5 +211,6 @@
 
     <script src="{% static 'lib/one-page-scroll.min.js' %}"></script>
 
+    <script src="{% static 'pages_script/media.js' %}"></script>
     <script defer src="{% static 'pages_script/landing.js' %}"></script>
 {% endblock %}

@@ -1,47 +1,54 @@
-@media only screen and (min-width: 1440px) {
+/* large screen */
+@media all and (min-width: 1440px){
     html {
-        font-size: 90%;
+        font-size: 130%;
     }
 }
-@media only screen and (min-width: 1140px) and (max-width: 1439px) {
+
+/* tablet */
+@media all and (min-width: 768px) and (max-width: 840px) and (orientation: portrait) {
+    html {
+        font-size: 140%;
+    }
+}
+@media all and (min-width: 841px) and (max-width: 1024px) and (orientation: portrait) {
+    html {
+        font-size: 180%;
+    }
+}
+
+@media all and (orientation: landscape) {
+    .item-container {
+        display: grid;
+        grid-template-columns: 48vw 49vw;
+        grid-column-gap: 3vw;
+    }
+    #slider {
+        width: 48vw;
+    }
+    #slider-nav {
+        width: 42vw;
+        margin-left: 4vw;
+    }
+}
+
+/* phones landscape */
+@media all and (max-width: 823px) and (orientation: landscape) {
+    html {
+        font-size: 85%;
+    }
+    .item-container {
+        grid-template-columns: 38vw 59vw;
+    }
+    #slider {
+        width: 38vw;
+    }
+    #slider-nav {
+        width: 32vw;
+    }
+}
+@media all and (max-width: 568px) and (orientation: landscape) {
     html {
         font-size: 80%;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1139px) {
-    html {
-        font-size: 65%;
-    }
-
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    html {
-        font-size: 65%;
-    }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    html {
-        font-size: 60%;
-    }
-}
-@media only screen and (min-width: 481px) and (max-width: 574px) {
-    html {
-        font-size: 55%;
-    }
-    .item-info h1, .btn {
-        font-size: 1.25rem;
-    }
-
-}
-@media only screen and (max-width: 480px) {
-    html {
-        font-size: 50%;
-    }
-    .item-info h1 {
-        font-size: 1.15rem;
-    }
-    .btn {
-        font-size: 1.1rem;
-    }
-}
-

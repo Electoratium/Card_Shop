@@ -16,6 +16,7 @@ $('#slider-nav').slick({
 
 
 let form = document.getElementById('orderForm');
+
 form.addEventListener('submit', hideForm);
 
 function hideForm(e) {
@@ -24,5 +25,16 @@ function hideForm(e) {
     form.classList.add('hidden');
 
     document.getElementById('success').classList.remove('hidden');
+}
+
+
+$('#accordion').on('shown.bs.collapse', scrollDown);
+
+function scrollDown() {
+    const deviceHeight = window.innerHeight,
+        fullHeightContent = document.body.clientHeight,
+        scrollHeight = fullHeightContent - deviceHeight;
+
+    if (scrollHeight) window.scrollBy(0, scrollHeight);
 }
 

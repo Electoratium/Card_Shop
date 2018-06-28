@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'admin/', admin.site.urls),
     url(r'^', include('landing.urls')),
 ]\
-    + static(settings.STATIC_URL, document_root = settings.STATICFILES_DIRS)
+    + static(settings.STATIC_URL, document_root = settings.STATICFILES_DIRS) \
+    + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

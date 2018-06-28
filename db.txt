@@ -1,0 +1,6 @@
+dbname: cardproject
+user: card_admin
+pswrd: 'v_rateeva'
+
+superuser django card_admin
+pswrd card1234

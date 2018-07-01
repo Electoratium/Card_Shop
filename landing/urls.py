@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'item', views.item, name='item'),
-    url(r'', views.landing)
+    url(r'^landing/', views.landing)
 ]

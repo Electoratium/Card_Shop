@@ -1,0 +1,254 @@
+p {
+    margin-bottom: 0;
+}
+/*arrow style */
+.arrow-container {
+  height:51px;
+  width:51px;
+  position:relative;
+  cursor: pointer;
+}
+
+.arrow:before , .arrow:after {
+  content:"";
+  width:24px;
+  height:2px;
+  background-color:#999;
+  position:absolute;
+  bottom:0;
+  left:0;
+  -webkit-transform-origin:23px 1px;
+  -webkit-transition:all 150ms;
+}
+
+.arrow:before {
+  -webkit-transform:rotateZ(135deg)
+}
+.arrow:after {
+  -webkit-transform:rotateZ(45deg)
+}
+span {
+  height:0;
+  width:2px;
+  display:block;
+  background-color:#999;
+  position:absolute;
+  left:22px;
+  -webkit-transition:all 0.3s ease;
+  opacity:0;
+  bottom:0
+}
+.arrow-container:hover .arrow span {
+  opacity:1;
+  height:50px;
+}
+.arrow-container:hover .arrow:before ,.arrow-container:hover .arrow:after {
+  bottom:0;
+}
+
+
+#home {
+    display: grid;
+    grid-template-rows: auto 6fr 1fr;
+}
+header {
+    display: grid;
+    align-items: center;
+    background: #dbdbdb;
+    padding: 1.1vh 0;
+}
+.grid-nav {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 1vw;
+    justify-content: space-around;
+
+    list-style: none;
+}
+.grid-nav a {
+    font-size: 0.85rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+}
+.img-full-width{
+    display: block;
+    width: 100%;
+}
+.carousel-caption *{
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 0.5rem;
+}
+.next-slide-block {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+section h1 {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+}
+
+#about-us {
+    display: grid;
+    width: 95%;
+    justify-content: start;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-row-gap: 2vh;
+}
+.author-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2vw;
+}
+
+.author-img, .contact-data {
+    align-self: center;
+}
+.contact-data {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+.contact{
+    border-bottom: 1px solid #676969;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact h2, h3 {
+    font-size: 1rem;
+}
+
+.author-descr * {
+    text-indent: 5%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+.author-contacts h3 {
+    font-size: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.author-contacts h3 i {
+    margin-right: 2%;
+}
+.author-contacts p {
+    font-size: 0.75rem;
+}
+
+address {
+    margin-bottom: 0;
+}
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.social a {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: color, background .5s ease;
+}
+.fb {
+    border-radius: 50%;
+    background: #425f9c;
+}
+.social .inst {
+    border-radius: 30%;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.you-tube {
+    border-radius: 20%;
+    background: red;
+}
+.fb:hover {
+    background:white;
+    color: #425f9c;
+    border: 2px dashed #425f9c;
+}
+.inst:hover {
+    background: white;
+    color: #be387c;
+    border: 2px dashed #cb3c77;
+}
+.you-tube:hover {
+    background: white;
+    color: #dd4e41;
+    border: 2px dashed red;
+}
+
+#new-arrivals {
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+
+}
+.arrivals {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 5vh;
+}
+.new-item {
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+.item-descr {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #3e7695;
+    opacity: 0.75;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+}
+.price::after {
+    content: ' ₴';
+}
+
+#items {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-content: center;
+}
+.items-slider {
+    display: grid;
+    width: 85vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.item {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+.image-container {
+    display: grid;
+    justify-content: center;
+}
+
+.slick-prev {
+    left: -5%;
+}
+.slick-next {
+    right: -5%;
+}
+.slick-prev, .slick-next {
+    top: 65%;
+    z-index: 10;
+}
+
+
+
+
+
+
+

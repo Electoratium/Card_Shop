@@ -1,0 +1,99 @@
+header {
+    width: 100%;
+    display: grid;
+    margin-bottom: 1vh;
+    align-items: center;
+    background: #dbdbdb;
+    padding: 1.1vh 0;
+}
+.grid-nav {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 1vw;
+    justify-content: space-around;
+
+    list-style: none;
+}
+.grid-nav a {
+    font-size: 0.8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+}
+
+.item-container {
+    width: 100vw;
+    display: grid;
+    grid-row-gap: 2vh;
+}
+
+.item-images {
+    display: grid;
+    grid-row-gap: 2vh;
+    justify-content: center;
+}
+.item-image {
+    display: grid!important;
+    justify-content: center;
+}
+#slider {
+    width: 80vw;
+}
+#slider-nav {
+    width: 80vw;
+    position: relative;
+}
+
+.slick-arrow::before {
+    color: #a9abaa;
+    font-size: 1.5rem;
+}
+.slick-prev {
+    left: -2rem;
+}
+.slick-next {
+    right: -2rem;
+}
+.item-info {
+    border-top: 1px solid darkgray;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.item-info h1 {
+    color: #7f7f7f;
+    font-size: 1.25rem;
+}
+.price {
+    font-size: 1.3rem;
+}
+.price::after {
+    content: ' ₴';
+}
+
+.card {
+    border-left: none;
+    border-right: none;
+}
+.card-header {
+    background: white;
+}
+.card-body {
+    font-size: 0.7rem;
+}
+.btn {
+    color: black;
+    background: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.btn i {
+    margin-right: 5%;
+}
+
+.hidden {
+    display: none;
+}
+
+

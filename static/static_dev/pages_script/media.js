@@ -13,19 +13,22 @@ function  getAdaptive() {
 
 
     function changeImagePath(elem) {
+
         let curPath = elem.getAttribute('src'),
-            newpath = curPath.replace('small', 'large');
+            newpath = elem.getAttribute('data-largeImgUrl');
 
 
 
         elem.setAttribute('src', newpath);
+        elem.setAttribute('data-largeImgUrl', curPath);
     }
 
     // ladscape  orientation smartphone
     if ( deviceWidth > deviceHeight) {
+
         if( deviceWidth >= minWidth) {
             for(let slide of carouselSlides) {
-                changeImagePath(slide.children[0])
+                changeImagePath(slide.children[0]);
             }
 
         }

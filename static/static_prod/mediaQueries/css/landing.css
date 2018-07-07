@@ -173,4 +173,14 @@
 }
 
 
+@media all and (orientation: landscape) {
+    .new-item img {
+        height: 74vh;
+    }
+}
 
+@media all and (orientation: portrait) {
+    .new-item img {
+        height: 25vh;
+    }
+}

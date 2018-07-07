@@ -4,90 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/static/static_prod/pages_script/landing.js" line="35" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72c0d78f-b267-47a3-84b0-bc6b18562339" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/static_dev/mediaQueries/js/landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0002_auto_20180628_1254.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0003_auto_20180630_1444.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0004_auto_20180701_1236.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0005_auto_20180701_1308.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0006_auto_20180701_1315.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0007_auto_20180701_1317.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0008_auto_20180701_1817.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0009_auto_20180701_2018.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/migrations/0010_auto_20180701_2019.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/landing/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/author.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/author/landscape/author.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-0d77720c-5738-4f07-8822-ec55f6c35e90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-253e439a-a002-4792-808d-e9eef73f3f56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-2c904d61-74d4-42ce-8aa5-53a30b651656.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-36d4bf75-f7fe-4660-82b0-2cfe55bd0aca.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-463e5c7a-4d86-4110-b9b0-f9ab7ab9fd44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-53310e8d-700d-421b-9916-359a7da4b601.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-5439552c-4b98-41b7-8589-a13608fb5749.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-8563795c-f0ee-4c24-ad32-c18114ec0ee4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-bd3eddcf-387e-4c79-ba51-f4e65b30e8fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-c86dd514-702d-4dfd-b35f-ba7f41926e95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-e34b5233-e83b-42cf-9f4c-071d9639154f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-e49d52bc-ba47-4605-b0d5-c231c28447f2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/large/img-ffd1a754-6c61-4cb0-929c-3dbbd876e3e0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/author.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/author/portrait/author.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-0d77720c-5738-4f07-8822-ec55f6c35e90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-253e439a-a002-4792-808d-e9eef73f3f56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-2c904d61-74d4-42ce-8aa5-53a30b651656.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-36d4bf75-f7fe-4660-82b0-2cfe55bd0aca.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-463e5c7a-4d86-4110-b9b0-f9ab7ab9fd44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-53310e8d-700d-421b-9916-359a7da4b601.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-5439552c-4b98-41b7-8589-a13608fb5749.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-8563795c-f0ee-4c24-ad32-c18114ec0ee4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-b4ca75bf-9051-4303-99b4-b13becd0448d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-bd3eddcf-387e-4c79-ba51-f4e65b30e8fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-c86dd514-702d-4dfd-b35f-ba7f41926e95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-d7dafccb-68b5-4520-9275-5e7bc0e26225.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/author/small/img-e34b5233-e83b-42cf-9f4c-071d9639154f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img-0ea93d4f-83f1-4d25-8fee-6e41b99a13b9.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img-212724d2-0ba5-410c-a7fb-04cafb6d78ee.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img-2d60b243-f8b1-4d7b-8e17-4d3f18cb5dd2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img-412935fb-b054-4d38-87dd-30f735f40e6f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img-77a18278-ff4d-4288-8a8c-67671d9ceb7e.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img-8e53558e-c3e0-4fcc-b0cf-81fcd86053cc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img-aadc4393-74d5-424f-8143-cdb49ee0652b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img-dea1ba56-b623-4408-a29c-56a22e472702.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img_1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/slider-content/landscape/img_1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/large/img_2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/slider-content/landscape/img_2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img-0ea93d4f-83f1-4d25-8fee-6e41b99a13b9.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img-212724d2-0ba5-410c-a7fb-04cafb6d78ee.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img-2d60b243-f8b1-4d7b-8e17-4d3f18cb5dd2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img-412935fb-b054-4d38-87dd-30f735f40e6f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img-77a18278-ff4d-4288-8a8c-67671d9ceb7e.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img-8e53558e-c3e0-4fcc-b0cf-81fcd86053cc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img-aadc4393-74d5-424f-8143-cdb49ee0652b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img-dea1ba56-b623-4408-a29c-56a22e472702.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img_1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/slider-content/portrait/img_1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/slider-content/small/img_2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/slider-content/portrait/img_2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_dev/css/media/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_dev/mediaQueries/css/item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_dev/css/media/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_dev/mediaQueries/css/landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_dev/pages_script/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_dev/pages_script/item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_dev/pages_script/landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_dev/pages_script/landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_dev/pages_script/media.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_dev/pages_style/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_dev/pages_style/item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_dev/pages_style/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_dev/pages_style/landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_prod/css/media/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_prod/css/media/item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_prod/css/media/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_prod/css/media/landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static_prod/pages_script/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/static_prod/pages_script/media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/landing.html" afterDir="false" />
-    </list>
+    <list default="true" id="72c0d78f-b267-47a3-84b0-bc6b18562339" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -365,7 +282,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" side_tool="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.501382" side_tool="true" weight="0.24449109" />
@@ -373,8 +290,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="9" side_tool="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="88" y="404" width="1809" height="268" id="Terminal" internal_type="SLIDING" order="10" sideWeight="0.498618" type="SLIDING" visible="true" weight="0.35005116" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28745162" />
+      <window_info anchor="bottom" auto_hide="true" x="88" y="404" width="1809" height="268" id="Terminal" internal_type="SLIDING" order="10" sideWeight="0.498618" type="SLIDING" weight="0.35005116" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28745162" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -425,20 +342,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/urls/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/media/items/image_2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -476,6 +379,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="102" selection-start-line="14" selection-start-column="102" selection-end-line="14" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -550,6 +456,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-263">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+            <marker date="1530883550386" expanded="true" signature="2030:2248" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -571,6 +481,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -592,6 +505,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -713,6 +629,12 @@
           <caret line="11" column="27" selection-start-line="11" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/media/new_arrivals/small/img_1.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/media/item-descr/item_1.jpeg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

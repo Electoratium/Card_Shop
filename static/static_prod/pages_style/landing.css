@@ -200,6 +200,9 @@ address {
     align-items: center;
     position: relative;
 }
+.new-item img {
+    height: 74vh;
+}
 .item-descr {
     position: absolute;
     bottom: 0;
@@ -234,7 +237,13 @@ address {
     display: grid;
     justify-content: center;
 }
-
+.image-container img {
+    width: 200px;
+    height: 270px;
+}
+.item-name, .price {
+    text-align: center;
+}
 .slick-prev {
     left: -5%;
 }

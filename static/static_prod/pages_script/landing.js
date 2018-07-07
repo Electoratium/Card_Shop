@@ -1,37 +1,52 @@
-let $mainContainer = $(".main");
+$('document').ready(function () {
 
-$mainContainer.onepage_scroll({
-    easing: "cubic-bezier(0.770, 0.000, 0.175, 1.000)",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-    animationTime: 700,             // AnimationTime let you define how long each section takes to animate
-    pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-    updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-    loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-    keyboard: true,                  // You can activate the keyboard controls
-    responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
-});
+    let $mainContainer = $(".main");
 
-$(".arrow-container").click( () => $mainContainer.moveDown() );
+    $mainContainer.onepage_scroll({
+        easing: "cubic-bezier(0.770, 0.000, 0.175, 1.000)",
+        animationTime: 700,
+        pagination: true,
+        updateURL: false,
+        loop: false,
+        keyboard: true,
+        responsiveFallback: false,
+        direction: "vertical"
+    });
+
+    $(".arrow-container").click( () => $mainContainer.moveDown() );
 
 
-$(".nav-link").click( (e) => {
- let curSlide = e.currentTarget.getAttribute('href');
+    $(".grid-nav").click( (e) => {
+        try {
+            let curSlide = e.target.getAttribute('href');
+            $mainContainer.moveTo(curSlide[2]);
+        }
+        catch (TypeError) {
+        }
+     return false;
+    } );
 
- $mainContainer.moveTo(curSlide[2]);
- return false;
-} );
 
-$('.items-slider').slick({
+
+    const nmbSlides = document.getElementsByClassName('items-slider')[0].childElementCount,
+        maxSlides = 4,
+        maxNmbSlides = nmbSlides > 5 ? maxSlides :  nmbSlides === 1 ? 1 : nmbSlides - 1,
+        mediumNmbSlides = maxNmbSlides > 1 ? maxNmbSlides - 1 : 1,
+        smallNmbSlides = mediumNmbSlides > 1 ? mediumNmbSlides - 1 : 1,
+        xsSmallNmbSlides = smallNmbSlides > 1 ? smallNmbSlides - 1 : 1;
+
+
+    $('.items-slider').slick({
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: maxNmbSlides,
+    slidesToScroll: maxNmbSlides,
     responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: mediumNmbSlides,
+            slidesToScroll: mediumNmbSlides,
             infinite: true,
             dots: false
           }
@@ -39,17 +54,18 @@ $('.items-slider').slick({
         {
           breakpoint: 641,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+
+            slidesToShow: smallNmbSlides,
+            slidesToScroll: smallNmbSlides
           }
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: xsSmallNmbSlides,
+            slidesToScroll: xsSmallNmbSlides
           }
         }
     ]
+    });
 });
-

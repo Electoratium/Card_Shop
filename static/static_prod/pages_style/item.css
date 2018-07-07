@@ -36,6 +36,11 @@ header {
 .item-image {
     display: grid!important;
     justify-content: center;
+    align-items: center;
+}
+.center-img {
+    display: grid!important;
+    justify-content: center;
 }
 #slider {
     width: 80vw;

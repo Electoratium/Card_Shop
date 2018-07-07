@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'phonenumber_field',
-    'responsive',
-    'landing'
+
+    'landing',
+    'item'
 ]
+
+# 'responsive',
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,3 +140,12 @@ STATICFILES_DIRS = (
 
 
 # STATIC_PROD = os.path.join(BASE_DIR, 'static', 'static_prod'),
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'rateeva.mail.shop@gmail.com'
+EMAIL_HOST_PASSWORD = 'cardMail'

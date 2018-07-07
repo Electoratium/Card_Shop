@@ -14,7 +14,7 @@ function  getAdaptive() {
 
     function changeImagePath(elem) {
         let curPath = elem.getAttribute('src'),
-            newpath = curPath.replace('small', 'large');
+            newpath = curPath.replace('small', 'landscape');
 
 
 
@@ -34,6 +34,11 @@ function  getAdaptive() {
 
         for(let newItem of newArrivalsItems) {
             changeImagePath(newItem.firstElementChild);
+
         }
+
+    }
+    else {
+
     }
 }

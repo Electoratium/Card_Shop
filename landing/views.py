@@ -1,13 +1,16 @@
 from django.shortcuts import render
 from .models import *
 
+from item.models import *
+
 
 def landing(request):
     slides = SlidesModel.objects.filter(isActive=True).order_by('created')
-    aboutAuthor = AuthorModel.objects.all().first()
-
-    return render(request, 'landing.html', {'slides': slides, 'aboutAuthor': aboutAuthor})
+    aboutAuthor = AuthorModel.objects.first()
 
 
-def item(request):
-    return render(request, 'item.html')
+    items = ItemImages.objects.filter(isActive = True).filter(item__isActive = True).distinct('item__name')
+
+    newArrivals = items[:3]
+
+    return render(request, 'landing.html', {'slides': slides, 'aboutAuthor': aboutAuthor, 'newArrivals': newArrivals, 'items': items})

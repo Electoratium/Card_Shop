@@ -6,13 +6,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed|Ubuntu:500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/one-page-scroll.css' %}">
-    <!-- slider style -->
+    <!-- slider styles -->
     <link rel="stylesheet" href="{% static 'css/slick.css' %}">
     <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
 
     <link rel="stylesheet" href="{% static 'pages_style/landing.css' %}">
 
-    <link rel="stylesheet" href="{% static 'css/media/landing.css' %}">
+    <link rel="stylesheet" href="{% static 'mediaQueries/css/landing.css' %}">
 {% endblock %}
 
 
@@ -31,8 +31,9 @@
                 </ol>
                 <div class="carousel-inner">
                     {% for slide in slides %}
+
                         <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}">
-                            <img src="{{ slide.portraitImage.url }}" data-largeImgUrl="{{ slide.landscapeImage.url }}" class="img-full-width">
+                            <img src="{{ slide.portraitImg.image.url }}" data-largeImgUrl="{{ slide.landscapeImg.image.url }}" class="img-full-width">
                             <div class="carousel-caption d-md-block">
 
                                 <h5>{% if slide.title %} {{ slide.title }} {% endif %}</h5>
@@ -57,7 +58,7 @@
         <h1>Об авторе</h1>
         <div class="author-data">
             <div class="author-img">
-                <img src="{{ aboutAuthor.portraitImage.url }}" data-largeImgUrl="{{ aboutAuthor.landscapeImage.url }}" class="img-full-width" alt="Author image">
+                <img src="{{ aboutAuthor.portraitImg.image.url }}" data-largeImgUrl="{{ aboutAuthor.landscapeImg.image.url }}" class="img-full-width" alt="Author image">
             </div>
             <div class="contact-data">
                 <div class="contact">
@@ -102,27 +103,16 @@
     <section id="new-arrivals">
         <h1>Новые поступления</h1>
         <div class="arrivals">
-            <a href="{% url 'item' %}" class="new-item">
-                    <img src="{% static 'media/new_arrivals/small/img_1.jpg' %}" class="img-full-width" alt="New card">
+            {% for newArrival in newArrivals %}
+                <a href = "/item/{{ newArrival.item.pk}}/" class="new-item">
+                    <img src="{{ newArrival.landscapeImage.url }}" data-largeImgUrl = "{{ newArrival.portraitImage.url }}" class="img-full-width" alt="{{ newArrival.item.name }}">
                     <div class="item-descr">
-                        <p>PUZZLE-maxi</p>
-                        <p class="price">150</p>
+                        <p>{{ newArrival.item.name }}</p>
+                        <p class="price">{{ newArrival.item.price }}</p>
                     </div>
-            </a>
-            <a href="{% url 'item' %}" class="new-item">
-                    <img src="{% static 'media/new_arrivals/small/img_1.jpg' %}" class="img-full-width" alt="New card">
-                    <div class="item-descr">
-                        <p>PUZZLE-maxi</p>
-                        <p class="price">150</p>
-                    </div>
-            </a>
-            <a href="{% url 'item' %}" class="new-item">
-                    <img src="{% static 'media/new_arrivals/small/img_1.jpg' %}" class="img-full-width" alt="New card">
-                    <div class="item-descr">
-                        <p>PUZZLE-maxi</p>
-                        <p class="price">150</p>
-                    </div>
-            </a>
+                </a>
+            {% endfor %}
+
         </div>
         <div class="next-slide-block">
             <div class="arrow-container">
@@ -135,55 +125,15 @@
     <section id="items">
         <h1>Товары</h1>
         <div class="items-slider">
-            <a class="item" href="{% url 'item' %}">
-                <div class="image-container">
-                    <img src="{% static 'media/items/image_1.jpg' %}" alt="Item 1">
-                </div>
-                <p class="item-name">Психологические карточки</p>
-                <p class="price">1350</p>
-            </a>
-            <a class="item" href="{% url 'item' %}">
-                <div class="image-container">
-                    <img src="{% static 'media/items/image_2.jpg' %}" alt="Item 1">
-                </div>
-                <p class="item-name">Психологические карточки</p>
-                <p class="price">1350</p>
-            </a>
-            <a class="item" href="{% url 'item' %}">
-                <div class="image-container">
-                    <img src="{% static 'media/items/image_3.jpg' %}" alt="Item 1">
-                </div>
-                <p class="item-name">Психологические карточки</p>
-                <p class="price">1350</p>
-            </a>
-            <a class="item" href="{% url 'item' %}">
-                <div class="image-container">
-                    <img src="{% static 'media/items/image_4.jpg' %}" alt="Item 1">
-                </div>
-                <p class="item-name">Психологические карточки</p>
-                <p class="price">1350</p>
-            </a>
-            <a class="item" href="{% url 'item' %}">
-                <div class="image-container">
-                    <img src="{% static 'media/items/image_5.jpg' %}" alt="Item 1">
-                </div>
-                <p class="item-name">Психологические карточки</p>
-                <p class="price">1350</p>
-            </a>
-            <a class="item" href="{% url 'item' %}">
-                <div class="image-container">
-                    <img src="{% static 'media/items/image_6.jpg' %}" alt="Item 1">
-                </div>
-                <p class="item-name">Психологические карточки</p>
-                <p class="price">1350</p>
-            </a>
-            <a class="item" href="{% url 'item' %}">
-                <div class="image-container">
-                    <img src="{% static 'media/items/image_7.jpg' %}" alt="Item 1">
-                </div>
-                <p class="item-name">Психологические карточки</p>
-                <p class="price">1350</p>
-            </a>
+            {% for item in items %}
+                <a class = "item" href = "/item/{{ item.item.pk }}/">
+                    <div class="image-container">
+                        <img src = "{{ item.smallImage.url }}" alt = "{{ item.item.name }}">
+                    </div>
+                    <p class="item-name">{{ item.item.name }}</p>
+                    <p class="price">{{ item.item.price }}</p>
+                </a>
+            {% endfor %}
         </div>
     </section>
 
@@ -199,6 +149,6 @@
 
     <script src="{% static 'lib/one-page-scroll.min.js' %}"></script>
 
-    <script defer src="{% static 'pages_script/media.js' %}"></script>
+    <script defer src="{% static 'mediaQueries/js/landing.js' %}"></script>
     <script defer src="{% static 'pages_script/landing.js' %}"></script>
 {% endblock %}

@@ -12,7 +12,7 @@ class AuthorForm(forms.ModelForm):
 
 
 class SlidesForm(forms.ModelForm):
-    description = forms.CharField(widget=forms.Textarea(attrs={'rows': 5, 'maxlength': 128}), label='Описание')
+    description = forms.CharField(widget=forms.Textarea(attrs={'rows': 5, 'maxlength': 128}), label='Описание', required=False)
     class Meta:
         model = SlidesModel
         exclude = ['created']

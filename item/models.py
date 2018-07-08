@@ -4,7 +4,7 @@ from helpers import *
 class ItemModel(models.Model):
     name = models.CharField('Название товара', max_length = 64)
     price = models.IntegerField('Цена', default= 0)
-    description = models.CharField(max_length = 400)
+    description = models.CharField("Описание товара", max_length = 400)
     created = models.DateTimeField("Дата создания", auto_now_add = True, auto_now = False)
     updated = models.DateTimeField("Дата изменения", auto_now_add = False, auto_now = True)
 
@@ -22,7 +22,7 @@ class ItemModel(models.Model):
 
 
 class ItemImages(models.Model):
-    item = models.ForeignKey(ItemModel, on_delete = models.CASCADE, null=True)
+    item = models.ForeignKey(ItemModel, on_delete = models.SET_NULL, null=True)
     landscapeImage = models.ImageField("Не Портретное изображение", validators = [isLandscape], upload_to = 'items/landscape')
     portraitImage = models.ImageField("Портретное изображение", validators = [isPortrait], upload_to = 'items/portrait')
     smallImage = models.ImageField("Маленькое портретное изображение для слайдера товаров", validators = [isPortrait], upload_to = 'items/itemsSlider')
@@ -43,7 +43,7 @@ class ItemImages(models.Model):
 
 
 class GeneralDetails(models.Model):
-    sendingDetails = models.CharField(max_length = 320)
+    sendingDetails = models.CharField('Детали отправки', max_length = 320)
     workEmail = models.EmailField('Еmail на который будут приходить оповещения о покупателях', default = 'ratviktoriya@gmail.com', max_length = 24)
 
 
@@ -61,7 +61,7 @@ class Orders(models.Model):
     name = models.CharField("Имя", max_length = 24)
     email = models.EmailField("Email", max_length = 32)
     phone = models.CharField("Номер телефона", blank = True, max_length = 10)
-    item = models.ForeignKey(ItemModel, related_name = "Товар", on_delete = models.CASCADE)
+    item = models.ForeignKey(ItemModel, related_name = "Товар", on_delete = models.SET_NULL, null = True)
     created = models.DateTimeField("Дата создания", auto_now_add=True, auto_now=False)
     IsProcessed = models.BooleanField("Заказ обработан?", default = False)
 

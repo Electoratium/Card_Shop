@@ -43,10 +43,10 @@ class PortraitImageSlider(models.Model):
 
 
 class SlidesModel(models.Model):
-    landscapeImg = models.ForeignKey(LandscapeImageSlider, verbose_name='Не портретное изображение', null = True, on_delete = models.CASCADE)
-    portraitImg = models.ForeignKey(PortraitImageSlider, verbose_name = 'Портретное изображение', null = True, on_delete = models.CASCADE)
+    landscapeImg = models.ForeignKey(LandscapeImageSlider, verbose_name='Не портретное изображение', null = True, on_delete = models.SET_NULL)
+    portraitImg = models.ForeignKey(PortraitImageSlider, verbose_name = 'Портретное изображение', null = True, on_delete = models.SET_NULL)
     title = models.CharField("Заголовок", max_length = 24, blank=True)
-    description = models.CharField(max_length = 128, blank=True, default = None)
+    description = models.CharField("Основной текст", max_length = 128, blank=True, default = None)
     created = models.DateTimeField("Дата создания", auto_now_add = True, auto_now = False)
     isActive = models.BooleanField("Показывать слайд", default = True)
 
@@ -99,12 +99,12 @@ class authorPortraitImages(models.Model):
 
 class AuthorModel(models.Model):
     landscapeImg = models.ForeignKey('authorLandscapeImages', verbose_name='Не портретное изображение', null=True,
-                                     on_delete=models.CASCADE)
+                                     on_delete=models.SET_NULL)
     portraitImg = models.ForeignKey('authorPortraitImages', verbose_name='Портретное изображение', null=True,
-                                    on_delete=models.CASCADE)
+                                    on_delete=models.SET_NULL)
     authorName = models.CharField("Имя",  default = 'Виктория Ратеева', max_length = 24)
-    authorJob = models.CharField(max_length = 64)
-    authorDescription = models.CharField(max_length = 256, default = None)
+    authorJob = models.CharField("Место работы, ученая степень и т.д.", max_length = 64)
+    authorDescription = models.CharField("Описание", max_length = 256, default = None)
 
     authorPhone = PhoneNumberField("Телефон рабочий")
     authorPhoneAdd = PhoneNumberField("Доп. телефон", blank = True)

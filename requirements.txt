@@ -1,8 +1,4 @@
 django
-
-попробуй сразу установить бинари
-psycopg2
 psycopg2-binary
 pillow
-
 django-phonenumber-field

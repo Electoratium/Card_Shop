@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'uz4$(g3lq38o00#&57s%7@om_24a9*^owedq8@*u*secgb)m^9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,8 +42,6 @@ INSTALLED_APPS = [
     'landing',
     'item'
 ]
-
-# 'responsive',
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,9 +81,9 @@ WSGI_APPLICATION = 'Shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'cardproject',
-        'USER': 'card_admin',
-        'PASSWORD': 'v_rateeva',
+        'NAME': 'Card_Db',
+        'USER': 'Card_Postgres_User',
+        'PASSWORD': 'cdf2-93d_.sqzoeri',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -114,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Europe/Kiev'
 
@@ -130,17 +128,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/media/'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static_prod')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static', 'static_dev'),
 )
+MEDIA_URL = '/media/'
 
-
-# STATIC_PROD = os.path.join(BASE_DIR, 'static', 'static_prod'),
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 

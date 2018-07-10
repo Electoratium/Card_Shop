@@ -102,13 +102,23 @@
     html {
         font-size: 110%;
     }
+    .carousel-item img {
+        height: 75vh; 
+    }
+    .social {
+        font-size: 0.7rem; 
+    }
+    .social a {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 
 /* orientation landcape */
 @media all and (orientation: landscape) {
      .carousel-item img {
-        height: 85vh;
+        height: 82vh;
     }
     .author-data {
         grid-template-columns: 2fr 3fr;
@@ -162,6 +172,21 @@
         height: 40px;
     }
 }
+@media all and (max-width: 640px) and (orientation: landscape) {
+    .carousel-item img {
+        height: 57vh;
+    }
+    section h1 {
+        font-size: 1.1rem;
+    }
+    .social {
+        font-size: 0.7rem;	
+    }
+    .social a {
+        width: 25px;
+        height: 25px;
+    }
+}
 
 @media all and (max-width: 568px) and (orientation: landscape){
     html {
@@ -175,12 +200,12 @@
 
 @media all and (orientation: landscape) {
     .new-item img {
-        height: 74vh;
+        height: 60vh;
     }
 }
 
 @media all and (orientation: portrait) {
     .new-item img {
-        height: 25vh;
+        height: 20vh;
     }
 }

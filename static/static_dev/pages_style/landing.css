@@ -61,18 +61,22 @@ header {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     grid-column-gap: 1vw;
     justify-content: space-around;
 
     list-style: none;
 }
 .grid-nav a {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     font-family: 'Roboto Condensed', sans-serif;
     color: black;
 }
-.img-full-width{
+.slider-container {
+    display: grid;
+    align-items: center;
+}
+.img-full-width {
     display: block;
     width: 100%;
 }
@@ -112,7 +116,6 @@ section h1 {
 }
 .contact-data {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
 
 }
@@ -188,7 +191,6 @@ address {
 #new-arrivals {
     display: grid;
     grid-template-rows: 1fr 6fr 1fr;
-
 }
 .arrivals {
     display: grid;

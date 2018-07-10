@@ -20,7 +20,7 @@ class GeneralDetailsForm(forms.ModelForm):
 
 
 class OrderForm(forms.ModelForm):
-    text = forms.CharField(widget=forms.Textarea(attrs = {'rows': 5, 'maxlength': 64}), label = '"Текст заказа"')
+    text = forms.CharField(widget=forms.Textarea(attrs = {'rows': 5, 'maxlength': 64}), label = 'Текст заказа', required = False)
     class Meta:
         model = Orders
         exclude = ['created']

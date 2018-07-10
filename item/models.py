@@ -63,7 +63,6 @@ class Orders(models.Model):
     phone = models.CharField("Номер телефона", blank = True, max_length = 10)
     item = models.ForeignKey(ItemModel, related_name = "Товар", on_delete = models.SET_NULL, null = True)
     created = models.DateTimeField("Дата создания", auto_now_add=True, auto_now=False)
-    IsProcessed = models.BooleanField("Заказ обработан?", default = False)
 
     class Meta:
         verbose_name = 'Заказ'

@@ -71,13 +71,11 @@ def item(request, itemId):
             toEmail = GeneralDetails.objects.first().workEmail
 
 
-            # ЗАМЕНИ electoratium toEmail
-
             send_mail(
                 'Заказ',
                 messageText,
                 'rateeva.mail.shop@gmail.com',
-                ['electoratium@gmail.com'],
+                [toEmail],
                 fail_silently=False,
             )
 
